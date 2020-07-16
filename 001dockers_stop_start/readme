@@ -1,0 +1,12 @@
+# 背景
+集群中建了很多docker服务，每次都登录不同机器执行stop，start命令，操作很繁琐，且重复性工作，顾用脚本提高效率
+
+# 脚本介绍
+main.sh  主控脚本
+kill_docker.sh 在单台机器上杀死dokcer进程脚本
+start_docker.sh 在单台机器上开启dokcer进程脚本
+
+# 脚本部署&运行
+1. 部署到集群中任意节点
+2. 运行关闭dokcer：sh main.sh kill
+3. 运行开启docker: sh main.sh start
